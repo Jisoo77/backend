@@ -1,0 +1,72 @@
+*{margin: 0;padding: 0;}
+ul,li{list-style: none;}
+a{text-decoration: none; color: #333;}
+.cf::after{content:""; clear: both; display: block;}
+
+section{
+    width: 100%;
+}
+.title h2{
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 28px;
+    color: #333;
+    padding: 30px 0;
+}
+section .inner{
+    width: 1200px;
+    height: 390px;
+    /* border: 1px solid #333; */
+    margin: 0 auto;
+}
+section .inner ul li{
+    float: left;
+    margin-right: 10px;
+}
+section .inner ul li .frame{
+    width: 224px;
+}
+section .inner ul li .frame img{
+    width: 100%;
+}
+
+section .inner ul li .content p.tt{
+    font-size: 16px;
+    color: #333;
+}
+section .inner ul li .content p.money{
+    font-size: 18px;
+    color:#333;
+    font-weight: bold;
+}
+section .inner ul li .content p.money del{
+    font-size: 14px;
+    color: #999;
+    font-weight:normal;
+}
+section .inner ul li .content p.money span.sale{
+    color: #ff6733;
+    margin-right: 5px;
+}
+
+section .inner{
+    position: relative;
+}
+section .inner .prev_btn{
+    width: 40px;
+    height: 40px;
+    background: url(../img1/main_prev_btn.png) no-repeat -10px -10px;
+    position: absolute;
+    left: -60px;
+    top: 112px;
+    cursor: pointer;
+}
+section .inner .next_btn{
+    width: 40px;
+    height: 40px;
+    background: url(../img1/main_next_btn.png) no-repeat -10px -10px;
+    position: absolute;
+    right: -60px;
+    top: 112px;
+    cursor: pointer;
+}
