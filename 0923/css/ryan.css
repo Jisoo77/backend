@@ -1,0 +1,111 @@
+*{margin: 0;padding: 0;}
+.bigbox{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border: 1px dotted #333;
+    margin: 100px auto 0; /* 좌우 중앙정렬 */
+}
+.ear{
+    width: 150px;
+    height: 150px;
+    border: 10px solid #333;
+    background-color: #d59729;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+}
+
+.ear.left{left: 40px;}
+.ear.right{right: 40px;}
+
+.face{
+    width: 500px;
+    height: 450px;
+    position: absolute;
+    border: 10px solid #333;
+    background-color: #d59729;
+    border-radius: 50%;
+    bottom: 0;
+    box-sizing: border-box;
+}
+.eyebrow.left{
+    left:100px;
+    top: 120px;
+    width: 100px;
+    height: 20px;
+    border-radius: 7px;
+    background-color: #000;
+    border: 1px solid #333;
+    position: absolute;
+}
+.eyebrow.right{
+    right: 100px;
+    top: 120px;
+    width: 100px;
+    height: 20px;
+    border-radius: 7px;
+    background-color: #000;
+    border: 1px solid #333;
+    position: absolute;
+}
+.eyeball.left{
+    left: 135px;
+    top: 190px;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border: 1px solid #333;
+    border-radius: 50%;
+    position: absolute;
+}
+.eyeball.right{
+    right: 135px;
+    top: 190px;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border: 1px solid #333;
+    border-radius: 50%;
+    position: absolute;
+}
+.nose{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    margin-left: -20px;
+    /* 좌우 중앙정렬 left:50%
+        넓이 40px의 절반인 margin-left:-20px */
+    z-index: 1;
+}
+.mouth{
+    width: 80px;
+    height: 74px;
+    border: 10px solid #000;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 240px;
+}
+.mouth.left{
+    left: 175px;
+}
+.mouth.right{
+    right: 175px;
+}
+.mouth_cover{
+    position: absolute;
+    width: 37px;
+    height: 40px;
+    background-color: #fff;
+    top: 2px;
+    transform: rotate(45deg);
+}
+.mouth_cover.left{left: 42px;}
+.mouth_cover.right{right: 43px;}

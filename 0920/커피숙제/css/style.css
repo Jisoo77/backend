@@ -1,0 +1,97 @@
+*{margin: 0; padding: 0;}
+.wrap{
+    width:800px;
+    margin: 0 auto;
+}
+.wrap header{
+    height: 270px;
+    background-image: url(../images/top2-1.jpg);
+}
+.wrap header h1{
+    padding-top: 190px;
+    margin-left: 630px;
+    color: white;
+}
+nav{
+    height: 60px;
+    background-color: #2a1d0a;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    float: left;
+    margin-left: 23px;
+    margin-top: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: block;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+}
+nav ul li a:hover{
+    background-color: #fff;
+    color:#2a1d0a;
+    text-decoration: underline;
+}
+.content{
+    overflow: hidden;
+}
+.content section{
+    width: 550px;
+    height: 550px;
+    float: left;
+    background-color: #ccc;
+}
+.content section h3{
+    text-align: center;
+    margin: 10px 0;
+}
+.content section article{
+    background-color: #fff;
+    border: 1px solid #333;
+    width: 230px;
+    height: 200px;
+    float: left;
+    padding: 10px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.content section article p{
+    line-height: 23px;
+}
+.content section article h4{
+    background-image: url(../images/kong.png);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+.content section article:hover{
+    background-color:rgb(192, 252, 192) ;
+}
+.content aside{
+    float: right;
+    width: 250px;
+    height: 550px;
+    text-align: center;
+    background-color: #726054;
+}
+.content aside h3{
+    margin: 10px 0;
+}
+.content aside img{
+    margin-bottom: 14px;
+}
+footer{
+    background-color: #333;
+    text-align: center;
+    color:#fff;
+    height: 50px;
+    line-height: 50px;
+}

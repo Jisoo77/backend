@@ -1,0 +1,112 @@
+*{margin: 0;padding: 0;}
+.bigbox{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border: 1px dotted #333;
+    margin: 100px auto 0;
+}
+.face{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    border: 10px solid #333;
+    background-color: rgb(100,149,237);
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+.eye{
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border: 1px solid #333;
+    border-radius: 50%;
+}
+.eye.left{
+    position: absolute;
+    top: 200px;
+    left: 120px;
+}
+.eye.right{
+    position: absolute;
+    top: 200px;
+    right: 120px;
+}
+.nose{
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border: 1px solid #333;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    top: 300px;
+    z-index: 1;
+}
+.mouth_cover{
+    width: 100px;
+    height: 120px;
+    background-color: #fff;
+    border: 5px solid #333;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 50px;
+    box-sizing: border-box;
+}
+.mouth_cover.left{
+    transform-origin: top center;
+    transform: rotate(45deg);
+}
+.mouth_cover.right{
+    transform-origin: top center;
+    transform: rotate(-45deg);
+}
+.mouth_line{
+    z-index: 1;
+    width: 80px;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+}
+.mouth_line_left{
+    position: absolute;
+    left: 100px;
+    bottom: 150px;
+}
+.mouth_line.left1{
+    transform-origin: right center;
+    transform: rotate(20deg);
+}
+.mouth_line.left2{
+    position: absolute;
+    top: 25px;
+    transform-origin: right center;
+}
+.mouth_line.left3{
+    transform-origin: right center;
+    top: 50px;
+    transform: rotate(-20deg);
+}
+
+.mouth_line_right{
+    position: absolute;
+    right: 180px;
+    bottom: 150px;
+}
+.mouth_line.right1{
+    transform-origin: left center;
+    transform: rotate(-20deg);
+}
+.mouth_line.right2{
+    position: absolute;
+    top: 25px;
+    transform-origin: left center;
+}
+.mouth_line.right3{
+    transform-origin: left center;
+    top: 50px;
+    transform: rotate(20deg);
+}
