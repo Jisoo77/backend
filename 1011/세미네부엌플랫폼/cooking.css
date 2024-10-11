@@ -36,14 +36,23 @@ section{
 }
 .main_middle ul{
     height: 695px;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
 }
 
 .main_middle ul li{
+    float: left;
+    padding-right: 18px;
+    margin-right: 18px;
     width:388px;
     height: 695px;
-    border: 1px solid #333;;
+    /* border: 1px solid #333; */
+    border-right: 1px solid #333;
+}
+.main_middle ul li:last-child{
+    padding-right: 0;
+    margin-right: 0;
+    border-right: 0;
 }
 .main_middle ul li .m_top{
     width:388px;
