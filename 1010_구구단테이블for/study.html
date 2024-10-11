@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write("<table border=1>")
+        
+        document.write("<tr>");
+        for(var i=2; i<=9; i++){
+             document.write("<th>"+i+"단</th>");
+        }
+        document.write("</tr>");
+        document.write("<tr>");
+        for(var num = 1; num<=9; num++){
+            for(var k = 2; k<=9; k++){
+                document.write("<td>"+k+"X"+num+"="+k*num);
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,192 @@
+*{margin: 0;padding: 0;}
+ul,li{list-style: none;}
+a{text-decoration: none; color: #333;}
+.cf::after{content:""; clear: both; display: block;}
+
+#wrap{
+    width: 1680px;
+    margin: 0 auto;
+}
+.section1 .top{
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+}
+section .top h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+.section1 .top div{
+    width: 120px;
+    height: 50px;
+    border: 1px solid #aaa;
+    border-radius: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.section1 .top a{
+    line-height: 50px;
+    text-align: center;
+    margin-left: 30px;
+    padding-right: 40px;
+    /* padding: 16px 24px; */
+    background: url(../img/ic_right.png) no-repeat 0;
+    background-size: 20px;
+    background-position-x: 50px;
+    
+}
+.section1 .nav{
+    margin-top: 54px;
+    padding-bottom: 20px;
+}
+.section1 .nav li a{
+    font-size: 24px;
+    color: #d4d4d4;
+    float: left;
+    margin:0 30px;
+    position: relative;
+}
+.section1 .nav li a:first-child{
+    margin-left: 0;
+}
+.section1 .nav li a.check{
+    color: #111;
+}
+.section1 .nav li a.on::after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #d4d4d4;
+    position: absolute;
+    border-radius: 50%;
+    margin: 15px 10px;
+    z-index: 1;
+}
+
+.section2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.section2::before{
+    content: "";
+    background: url(../img/ic_prev.png) no-repeat 0 0;
+    background-position: 50% 50%;
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border: 1px solid #d4d4d4;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 1;
+    top: 200px;
+    left: -20px;
+}
+.section2::after{
+    content: "";
+    background: url(../img/ic_next.png) no-repeat 0 0;
+    background-position: 50% 50%;
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border: 1px solid #d4d4d4;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 1;
+    top: 200px;
+    right: 20px;
+}
+.section2 ul li{
+    padding-top: 15px;
+    border-top: 1px solid #d4d4d4;
+    float: left;
+    width: 410px;
+    height: 610px;
+    border-right: 1px solid #d4d4d4;
+}
+.section2 ul li:last-child{
+    border-right: none;
+}
+.section2 ul li .all{
+    padding: 0 11px;
+}
+.section2 .img{
+    width: 388px;
+    height: 388px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.section2 .img:before{
+    content:"";
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    background: url(../img/ic_scrap.png) no-repeat 0 0;
+    background-size: 36px;
+    right: 20px;
+    top: 20px;
+    z-index: 1;
+}
+.section2 img{
+    width: 100%;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+.section2 ul .contents:hover img{
+    transform: scale(1.1);
+}
+
+.section2 ul .contents a:nth-child(2){
+    padding: 20px 0 48px;
+    display: block;
+}
+.section2 ul .sol a p:first-child{
+    width: 50px;
+    height: 28px;
+    color: #fff;
+    background-color: #fb9622;
+    padding: 0 5px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 13px;
+}
+.section2 ul .re a p:first-child{
+    width: 50px;
+    height: 28px;
+    color: #fff;
+    background-color: #0bab6d;
+    padding: 0 5px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 13px;
+}
+.section2 ul .contents h2{
+    font-size: 26px;
+    margin: 16px 0;
+    color: #000;
+}
+.section2 ul .contents p:last-child{
+    font-size: 18px;
+    color: #000;
+}
+
+.section2 ul .sol+.bottom a{
+    color: #666;
+    border: 1px solid #d4d4d4;
+    padding: 10px 16px;
+    border-radius: 50px;
+}
+.section2 ul .re+.bottom a{
+    color: #000;
+    background-color: #f3f3f3;
+    padding: 10px 16px;
+    border-radius: 50px;
+}
+.section2 ul .re+.bottom a .left{
+    border-right: 1px solid #b8b8b8;
+    padding-right: 5px;
+}
