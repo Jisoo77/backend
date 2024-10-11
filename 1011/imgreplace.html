@@ -34,8 +34,9 @@ function changeImage(event) {
     const image = event.target; // 클릭된 이미지 요소
 
     const currentSrc = image.src;
+    // images/img1over.jpg
 
-    // 이미지의 src가 imgX.jpg일 경우 imgX_1.jpg로 변경
+    // 이미지의 src가 img1over.jpg일 경우 img1out.jpg로 변경
     if (currentSrc.includes('over.jpg')) {
         image.src = currentSrc.replace('over.jpg', 'out.jpg');
     }else{
