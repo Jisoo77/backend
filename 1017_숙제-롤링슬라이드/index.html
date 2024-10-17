@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        ul{list-style: none;}
+        li{float: left; width: 1200px;}
+        a{text-decoration: none;}
+        #banner_wrap{
+            width: 6000px;
+            margin:100px auto 0;
+        }
+        #frame{
+            height: 300px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="banner_wrap">
+        <div id="frame">
+            <ul id="banner">
+                <li><a href="#"><img src="img/slide1.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/slide2.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/slide3.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var list = document.getElementById('banner');
+        var listLi = document.querySelectorAll('#banner li');
+        var li_width = 1200;
+        var num = 0;
+        function autoplay(){
+            if(num==3){
+                num=0;
+                list.style.transition = 'none';
+                list.style.marginLeft = 0;
+            }
+            setTimeout(function(){
+                num++;
+                list.style.transition = 'margin-left 0.5s';
+                list.style.marginLeft = -li_width * num +"px";
+            },50);
+        }
+        setInterval(autoplay,3000);
+    </script>
+</body>
+</html>
