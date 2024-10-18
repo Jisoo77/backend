@@ -1,0 +1,54 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #222;}
+
+#tabwrap{
+    width: 400px;
+    height: 332px;
+    margin: 50px auto;
+    border: 1px solid transparent;
+}
+#tab_menu a{
+    display: block;
+    float: left;
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #d9d9d9;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: bold;
+}
+#tab_menu a.active{
+    background-color: #32557f;
+    color: #fff;
+}
+
+.tabcontent{
+    height: 210px;
+    margin-top: 50px;
+    padding: 30px 20px;
+    border: 1px solid #333;
+}
+.tabcontent li{
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+.tabcontent li:last-child{
+    padding-bottom: 0;
+}
+.tabcontent #tab1{
+    display: none;
+}
+.tabcontent #tab2{
+    display: block;
+}
+
+
+.tabcontent div ul li{
+    width: 360px; /* 오버되면 말줄임 적용할 최대 넓이 */
+    white-space: nowrap; /*자동 줄바꿈을 적용하지 않을거야*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

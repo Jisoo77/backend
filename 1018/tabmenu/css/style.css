@@ -23,6 +23,10 @@ a{text-decoration: none;}
     color: #fff;
     background-color: #aa7575;
 }
+.tabWrap .tab_menu li a.active{
+    background-color: #df2ee2;
+    color: #f3e40c;
+}
 #tabContent{
     border: 1px solid #ddd;
     padding: 20px;

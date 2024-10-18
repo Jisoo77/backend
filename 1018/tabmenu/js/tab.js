@@ -5,6 +5,7 @@ const tabContent = document.querySelectorAll('#tabContent>div');
 targetLink.forEach(function(link){
 
     link.addEventListener('click',function(e){
+
         e.preventDefault(); // 링크금지
         let orgTarget = e.target.getAttribute('href');
         // 클릭(e.target) - this로 변경 가능
@@ -20,6 +21,13 @@ targetLink.forEach(function(link){
         });
         // 클릭한 탭만 보이게 설정
         document.getElementById(tabTarget).style.display="block";
+        
+        targetLink.forEach(function(link2){
+            link2.classList.remove('active');
+        });
+            e.target.classList.add('active');
+
+        
     });
 
 });
