@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.7.1.js"></script>
+    <style>
+        *{margin: 0; padding: 0;}
+        ul{list-style: none;}
+        a{text-decoration: none; color: #000;}
+        body{overflow-y: hidden;}
+        section{
+            width: 400%;
+        }
+        article{
+            width: 25%;
+            height: 100vh;
+            float: left;
+        }
+        #article1{
+            background-color: coral;
+        }
+        #article2{
+            background-color: blueviolet;
+        }
+        #article3{
+            background-color: yellowgreen;
+        }
+        #article4{
+            background-color: skyblue;
+        }
+        nav{
+            position: fixed;
+            top: 50px;
+            left: 50px;
+            width: 100%;
+        }
+        nav ul li{float: left;}
+        nav ul li a{
+            text-align: center;
+            display: block;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+        nav ul li.on a{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="on"><a href="#article1">회사소개</a></li>
+            <li><a href="#article2">제품소개</a></li>
+            <li><a href="#article3">커뮤니티</a></li>
+            <li><a href="#article4">다운로드</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article id="article1"></article>
+        <article id="article2"></article>
+        <article id="article3"></article>
+        <article id="article4"></article>
+    </section>
+
+    <script>
+        $(function(){
+            var a0 = $('section > article').eq(0).offset().left;
+            var a1 = $('section > article').eq(1).offset().left;
+            var a2 = $('section > article').eq(2).offset().left;
+            var a3 = $('section > article').eq(3).offset().left;
+            console.log(a0,a1,a2,a3);
+            // 0 1912 3824 5736
+
+            // $(window).scroll(function(){
+            //     var sct = $(this).scrollLeft();
+            //     if(sct >= a0){
+            //         $('nav ul li').removeClass('on');
+            //         $('nav ul li').eq(0).addClass('on');
+            //     }
+            //     if(sct >= a1){
+            //         $('nav ul li').removeClass('on');
+            //         $('nav ul li').eq(1).addClass('on');
+            //     }
+            //     if(sct >= a2){
+            //         $('nav ul li').removeClass('on');
+            //         $('nav ul li').eq(2).addClass('on');
+            //     }
+            //     if(sct >= a3){
+            //         $('nav ul li').removeClass('on');
+            //         $('nav ul li').eq(3).addClass('on');
+            //     }
+            // });
+
+            $('nav ul li').click(function(){
+                var i = $(this).index();
+                var offset_t = $('section > article').eq(i).offset().left;
+                // alert(offset_t);
+                $('html, body').stop().animate({scrollLeft:offset_t},1000); 
+                $('nav ul li').removeClass('on');
+                $('nav ul li').eq(i).addClass('on');               
+                return false;
+            });
+
+        });
+    </script>
+</body>
+</html>
