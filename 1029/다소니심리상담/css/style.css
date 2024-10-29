@@ -1,0 +1,101 @@
+*{margin: 0; padding: 0;}
+ul, li{list-style: none;}
+a{text-decoration: none; color: #333;}
+.cf::after{content: ""; display: block; clear: both;}
+
+header{
+    width: 100%;
+    height: 111px;
+}
+header div{
+    width: 252px;
+    height: 111px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background: url(../img/header_line.png) no-repeat 0 0;
+}
+.menu{
+    width: 100%;
+    height: 50px;
+    /* overflow: hidden; */
+    position: relative;
+    z-index: 10;
+}
+ul.m_bar{
+    width: 1000px;
+    margin: 0 auto;
+}
+.m_bar>li{
+    float: left;
+    text-align: center;
+}
+.m_bar>li>a{
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16.5px;
+}
+.m_bar>li>a:hover{
+    color: #000;
+    font-weight: 600;
+}
+.sub_bar{
+    display: none;
+    width: 100%;
+}
+.after{
+    width: 100%;
+    height: 400px;
+    top: 52px;
+    left: 0;
+    background-color: #fff;
+    position: absolute;
+    z-index: -10;
+    display: none;
+}
+.sub_bar li a{
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+}
+.sub_bar li a:hover{
+    color: #000;
+    font-weight: bold;
+    background: url(../img/sec5_tit2.png) no-repeat 0 0;
+    background-position: 30% center;
+}
+.line2{
+    width: 100%;
+    height: 2px;
+    background: url(../img/header_line.png) no-repeat 0 0;
+    position: absolute;
+    display: none;
+    top: 50px;
+    left: 0;
+}
+.m_bar::after{
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    z-index: -11;
+}
+
+
+section{
+    width: 100%;
+}
+.img_slide img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
