@@ -115,4 +115,32 @@ $(function(){
         }
     });
 
+    // #s5
+    var d1 = $('#s5').offset().top;
+    $(window).scroll(function(){
+        var sct = $(this).scrollTop();
+
+        if(d1 < sct+700){
+            $('.s5_inner').addClass('slide1');
+        }
+    });
+
+    // #s6
+    var d2 = $('#s6').offset().top;
+    
+    $(window).scroll(function(){
+        var sct = $(this).scrollTop();
+        if(d2 < sct+700){
+            $('.s6_noti, .s6_review').addClass('slide1');
+        }
+    });
+
+    // fix_box
+    var f_box = $('.fix_box').offset().top; //400
+    // alert(f_box);
+    $(window).scroll(function(){
+        var sct = $(this).scrollTop();
+        $('.fix_box').stop().animate({top:f_box+sct},500);
+    });
+
 });
