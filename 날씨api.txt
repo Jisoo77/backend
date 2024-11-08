@@ -1,0 +1,18 @@
+날씨api 키값
+fa8cb3975f6a0ffb65cf928a6f3aae9f
+
+https://home.openweathermap.org/api_keys
+
+api call
+http://api.openweathermap.org/data/2.5/forecast?id=524901&appid={API key}
+
+https://openweathermap.org/city/1835553
+지역 날씨 검색
+1835553->도시코드(수원)
+
+수원 api call
+http://api.openweathermap.org/data/2.5/forecast?id=1835553&appid=fa8cb3975f6a0ffb65cf928a6f3aae9f
+
+서울 api call
+http://api.openweathermap.org/data/2.5/forecast?id=1835848&appid=fa8cb3975f6a0ffb65cf928a6f3aae9f
+
