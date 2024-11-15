@@ -14,6 +14,7 @@ public class Scan9 {
 
         System.out.print(a+":"+b);
         // System.out.println(a);
+        scanner.close();
     }   
 }
 

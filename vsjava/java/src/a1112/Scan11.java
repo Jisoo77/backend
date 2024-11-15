@@ -8,6 +8,8 @@ public class Scan11 {
         System.out.print("실수를 입력하세요 : ");
 		float num = scan.nextFloat();
         System.out.printf("출력 실수 : %.2f",num);
+
+        scan.close();
     }   
 }
 

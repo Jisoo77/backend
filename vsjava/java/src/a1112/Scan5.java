@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Scan5 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner();
+        Scanner scanner = new Scanner(System.in);
         System.out.println();
         System.out.print("x 값 입력: ");
 		int x = scanner.nextInt();
@@ -15,5 +15,6 @@ public class Scan5 {
         int result = x + y;
         System.out.println("x + y : " + result);
  
+        scanner.close();
     }   
 }

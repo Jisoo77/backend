@@ -15,5 +15,6 @@ public class Scan7 {
         System.out.println(a);
         System.out.println(b);
  
+        scanner.close();
     }   
 }

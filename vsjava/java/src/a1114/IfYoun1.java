@@ -18,6 +18,8 @@ public class IfYoun1 {
             System.out.println("윤년이 아닙니다.");
         }
 
+        scan.close();
+
         // if(year % 4 == 0 && year % 100 != 0){
         //     System.out.println("윤년입니다.");
         // }else if(year % 4 == 0 && year % 400 == 0){

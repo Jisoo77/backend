@@ -1,9 +1,10 @@
-import UserCard from './UserCard';
+
 import './App.css';
+import UserList from './UserList';
 function App(){
   
   return(
-    <UserCard name="Alice" age={30} location="New York"/>
+    <UserList/>
   );
 }
 export default App;

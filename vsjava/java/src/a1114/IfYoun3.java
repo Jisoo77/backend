@@ -13,5 +13,7 @@ public class IfYoun3 {
         }else{
             System.out.println("윤년이 아닙니다.");
         }
+
+        scan.close();
     }
 }

@@ -14,6 +14,7 @@ public class Scan8 {
 
         System.out.print(b+" "+a);
         // System.out.println(a);
+        scanner.close();
     }   
 }
 

@@ -12,5 +12,7 @@ public class IfYoun4 {
             System.out.println("윤년입니다.");
         else
             System.out.println("윤년이 아닙니다.");
+
+        scan.close();
     }
 }

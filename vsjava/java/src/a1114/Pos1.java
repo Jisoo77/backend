@@ -15,5 +15,7 @@ public class Pos1 {
         }else{
             System.out.println("양수입니다.");
         }
+
+        scan.close();
     }
 }

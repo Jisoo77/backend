@@ -21,6 +21,7 @@ public class Max1 {
         }
         System.out.println("가장 큰 숫자는 " + max + "입니다.");
 
+        scan.close();
         // if(num1>num2 && num1>num3){
         //     System.out.println("가장 큰 숫자는 "+num1+"입니다.");
         // }else if(num2>num1 && num2>num3){

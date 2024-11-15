@@ -8,6 +8,8 @@ public class Scan10 {
         System.out.print("문자를 입력하세요 : ");
 		String word = scanner.nextLine();
         System.out.print("출력 문자열 : "+word);
+
+        scanner.close();
     }   
 }
 
