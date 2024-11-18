@@ -12,7 +12,12 @@ public class Lotto2 {
 
         for(int i=0; i<6; i++){
             j=(int)(Math.random()*45);
-            
+            tmp = ball[i];
+            ball[i]=ball[j];
+            ball[j]=tmp;            
+        }
+        for(int i=0; i<6; i++){
+            System.out.printf("ball[%d]=%d%n",i,ball[i]);
         }
     }
 }
