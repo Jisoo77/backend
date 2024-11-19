@@ -4,7 +4,7 @@ public class Char1 {
     public static void main(String[] args) {
         String ssn = "7310182328213";
         char sex = ssn.charAt(6);
-        int len = ssn.length();
+        // int len = ssn.length();
         switch (sex) {
             case '1':
             case '3':
