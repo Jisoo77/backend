@@ -1,0 +1,66 @@
+*{margin: 0;padding: 0;}
+ul,li{list-style: none;}
+a{text-decoration: none; color: #333;}
+.cf::after{content:""; clear: both; display: block;}
+
+header{
+    width: 1200px;
+    height: 160px;
+    margin: 0 auto;
+}
+header .sec1 .logo{
+    float: left;
+    margin-top: 85px;
+}
+header .sec1 .logo a{
+    background: url(../img/logo_02.png);
+    text-indent: -999px;
+    display: block;
+    width: 228px;
+    height: 35px;
+}
+header .sec1 ul{
+    padding-top: 40px;
+    float: right;
+}
+header .sec1 ul li{
+    float: left;
+    margin-right: 20px;
+}
+header .sec1 ul li a{
+    font-size: 14px;
+    color: #58595b;
+}
+header .sec1 ul li a.youtube{
+    background: url(../img/ico_youtube_wel.png) no-repeat;
+    text-indent: -999999px;
+    display: block;
+    width: 25px;
+    height: 20px;
+}
+header .sec1 ul li a.instagram{
+    background: url(../img/ico_instagram_02.png) no-repeat;
+    text-indent: -999999px;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+header .sec1 ul li a.facebook{
+    background: url(../img/ico_facebook_02.png) no-repeat;
+    text-indent: -999999px;
+    display: block;
+    width: 11px;
+    height: 20px;
+}
+
+.sec2{
+    float: right;
+    width: 763px;
+}
+header .sec2>ul>li{
+    float: left;
+}
+header .sec2>ul>li>a{
+    font-size: 20px;
+    color: #58595b;
+}
