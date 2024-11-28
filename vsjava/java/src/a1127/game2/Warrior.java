@@ -10,3 +10,5 @@ public class Warrior extends Hero {
     }
 
 }
+
+// Warrior는 부모를 상속받고 groundCutting() 메서드를 가지고있다.
