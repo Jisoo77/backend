@@ -13,6 +13,7 @@ public class IfQ1 {
         }else{
             System.out.println(num+"은 홀수입니다.");
         }
+        scan.close();
 
     }
 }

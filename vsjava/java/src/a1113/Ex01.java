@@ -6,5 +6,7 @@ public class Ex01 {
         // int number2 = 3.0; 정수만 저장가능
         double pi = 3.14; // 실수를 저장
         boolean isActive = true; // true/false 저장 
+
+        System.out.println(number + " " + pi + " " + isActive);
     }
 }

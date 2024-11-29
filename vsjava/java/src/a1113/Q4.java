@@ -17,7 +17,9 @@ public class Q4 {
         
         System.out.println("합계 : "+sum);
         System.out.printf("평균 : %.1f",(float)sum/3);
-        // System.out.printf("평균 : %.1f",avg);
+        System.out.printf("평균 : %.1f",avg);
+        
+        scan.close();
     }
 }
 // 정수 세 개를 입력받아 합과 평균을 출력하는 프로그램을 작성해보자.

@@ -8,5 +8,7 @@ public class Scan2 {
         // Scanner 객체 생성 System.in(콘솔)에서 입력받는다.
         String str = scaner.nextLine();
         System.out.println(str);
+
+        scaner.close();
     }
 }

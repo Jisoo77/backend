@@ -14,5 +14,7 @@ public class ForQ2 {
             sum += i; // sum = sum+i;
         }
         System.out.printf("1부터 %d까지의 합은 %d 입니다.", num, sum);
+
+        scan.close();
     }
 }

@@ -4,7 +4,7 @@ public class Ari1 {
     public static void main(String[] args) {
         byte v1 = 10;
         byte v2 = 4;
-        int v3 = 5;
+        // int v3 = 5;
         long v4 = 4L;
 
         int result1 = v1+v2; // 모든 연산자는 int 타입으로 자동 변환후 연산

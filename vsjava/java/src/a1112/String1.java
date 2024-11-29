@@ -6,5 +6,6 @@ public class String1 {
         // char var2 = '홍길동'; 한문자만 받아야함
         String var1 = "A";
         String var2 = "홍길동";
+        System.out.println(var1 + var2);
     }
 }

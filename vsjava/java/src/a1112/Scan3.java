@@ -12,5 +12,6 @@ public class Scan3 {
 
         System.out.println("Name : "+name);
         System.out.println("Age : "+age);
+        scan.close();
     }
 }

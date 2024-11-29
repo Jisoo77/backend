@@ -6,7 +6,7 @@ public class Cart {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         boolean run = true;
-        String cart;
+        // String cart;
 
         while (run) {
             System.out.println("=======================================================");
@@ -22,7 +22,7 @@ public class Cart {
                     System.out.print("추가할 아이템> ");
                     cho = sc.nextLine();
                     System.out.print(cho+"이(가) 카트에 추가되었습니다.");
-                    cart += sc.nextLine();
+                    // cart += sc.nextLine();
                     break;
                 case 2:
                     System.out.print("삭제할 아이템> ");
@@ -31,7 +31,7 @@ public class Cart {
                     // cart -= sc.nextLine();
                     break;
                 case 3:
-                    System.out.print("현재 카트> [" + cart +"]");
+                    // System.out.print("현재 카트> [" + cart +"]");
                     break;
                 case 4:
                     run = false;
