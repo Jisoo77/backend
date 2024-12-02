@@ -1,4 +1,4 @@
-package a1129.book;
+package book_컨펌;
 
 // 책장
 public class Library {
@@ -7,7 +7,7 @@ public class Library {
     private String location; // 책 위치
     private String isbn;
     private boolean available;
-    public Library(){}
+    public Library(){};
     public Library(String title, String author, String location, String isbn) {
         this.title = title;
         this.author = author;

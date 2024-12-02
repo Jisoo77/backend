@@ -1,4 +1,4 @@
-package a1129.book;
+package book_컨펌;
 
 import java.util.Scanner;
 
@@ -51,20 +51,20 @@ public class Search {
                     System.out.println("도서의 ISBN");
                     String newIsbn = sc.nextLine();
                     sc.nextLine(); // 개행문자 초기화
-                    System.out.println(newTitle + "추가하려는 도서 이름");
+                    System.out.println(newTitle + "추가하려는 숙소 이름");
                     if(newTitle.equals("")){ // 숙소이름이 입력되어있지 않으면 재입력받기
-                        System.out.print("추가하려는 숙소의 이름을 입력하세요\n 도서이름 >>");
+                        System.out.print("추가하려는 숙소의 이름을 입력하세요\n 숙소이름 >>");
                         newTitle = sc.nextLine();
                     }
                     manager.addLibrary(newTitle, newAuthor, newLocation, newIsbn);
-                    System.out.println("도서추가 완료");
+                    System.out.println("숙소추가 완료");
                     break;
                 case 5:
                     System.out.println("삭제 시작");
-                    System.out.print("삭제하려는 도서 이름을 적어주세요 >> ");
+                    System.out.print("삭제하려는 호텔 이름을 적어주세요 >> ");
                     String dname = sc.nextLine();
                     if(dname.equals("")){
-                        System.out.println("삭제하려는 도서 이름 재입력\n 이름>>");
+                        System.out.println("삭제하려는 혼텔이름 재입력\n 이름>>");
                         dname = sc.nextLine();
                     }
                     manager.delLibrary(dname);

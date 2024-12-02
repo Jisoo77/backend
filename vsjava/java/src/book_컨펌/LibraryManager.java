@@ -1,4 +1,4 @@
-package a1129.book;
+package book_컨펌;
 
 import java.util.ArrayList;
 import java.util.Scanner;
