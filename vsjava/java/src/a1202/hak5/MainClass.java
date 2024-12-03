@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class MainClass {
     public static void main(String[] args) {
         // StudentDTO student1 = new StudentDTO(0,"테스트1",11,100,90,80);
-        // StudentDTO student2 = new StudentDTO(0,"테스트2",22,90,89,91);
-        // StudentDTO student3 = new StudentDTO(0,"테스트3",33,85,75,55);
+        // StudentDTO student2 = new StudentDTO(1,"테스트2",22,90,89,91);
+        // StudentDTO student3 = new StudentDTO(2,"테스트3",33,85,75,55);
         // ArrayList<StudentDTO> arrList = new ArrayList<>();
         // arrList.add(student1);
         // arrList.add(student2);
@@ -43,10 +43,20 @@ public class MainClass {
                 test.userUpdate();
             }else if(choice == 5){
                 test.PrintAll();
+            }else if(choice == 6){
+                try{
+                    test.dataSave();
+                }catch(Exception e){
+                    e.printStackTrace();
+                }
+            }else if(choice == 7){
+                test.dataLoad();
             }else if(choice == 0){
                 System.out.println("종료합니다.");
                 sc.close();
                 System.exit(0);
+            }else{
+                System.out.println("잘못 선택했습니다.");
             }
         }
         
