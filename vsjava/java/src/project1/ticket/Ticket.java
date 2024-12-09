@@ -1,30 +1,22 @@
 package project1.ticket;
 
-import java.time.Instant;
-
 public class Ticket {
+    private String id; // 회차
     private String date; // 공연 날짜
     private String time; // 공연 시간
     private String cast; // 해당 회차 캐스팅
     private String reservation; // 예매하기
     private String chek; // 예매내역 체크
     private String cancle; // 예매 취소
-    private String name; // 예매자 이름
-    private String phone; // 예매자 전화번호
     
-    public int getId() {
+    public String getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
-    public String getPhone() {
-        return phone;
-    }
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-    public Ticket(String date, String time, String cast) {
+    public Ticket(String id, String date, String time, String cast) {
+        this.id = id;
         this.date = date;
         this.time = time;
         this.cast = cast;
@@ -65,11 +57,9 @@ public class Ticket {
     public void setCancle(String cancle) {
         this.cancle = cancle;
     }
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
+    @Override
+    public String toString() {
+        return id + ", 날짜 : " + date + ", 시간 : " + time + ", 캐스트 : " + cast;
     }
 
 }
