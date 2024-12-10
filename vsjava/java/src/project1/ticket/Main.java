@@ -13,8 +13,8 @@ public class Main {
         // TicketManager tm = new TicketManager();
         System.out.println("뮤지컬 <프리다> 예매 진행을 시작합니다.");
         System.out.println();
+        TicketManager tm = new TicketManager();
 
-        ArrayList<Ticket> tickets = new ArrayList<>();
         tickets = new ArrayList<>();
         tickets.add(new Ticket("1회차","12/10", "20:00", "김소향, 전수미, 정영아, 허혜진"));
         tickets.add(new Ticket("2회차","12/11", "16:00", "최정원, 리사, 임정희, 최서연"));
@@ -52,45 +52,60 @@ public class Main {
                     musicalCancle(); // 취소하기
                     break;
                 case 5:
-                    musicalAdmin(); // 관리자메뉴
+                    if(!musicalAdminPw()){
+                        System.out.println("비밀번호가 틀렸습니다.");
+                        break;
+                    }
+                    tm.musicalAdmin(); // 관리자메뉴
                     break;
                 case 6:
                     run = false;
                     break;
                 default:
                     break;
+                }
             }
+            
+            // System.out.println("예매를 마칩니다.");
         }
-        
-        // System.out.println("예매를 마칩니다.");
+    
+    private static boolean musicalAdminPw() { // 관리자메뉴 비번
+        Scanner sc = new Scanner(System.in);
+        System.out.println("관리자 비밀번호를 입력하세요");
+        System.out.print(">> ");
+        String adminPw = sc.next();
+        // sc.nextLine();
+        return "1234".equals(adminPw);
     }
 
     public static void musicalTime(){
         System.out.println("================================= 시간표 =================================");
-        System.out.println(tickets.get(0).getId() + "날짜 : " + tickets.get(0).getDate() + ", 시간 : " + tickets.get(0).getTime() + ", 캐스트 : " + tickets.get(0).getCast());
-        System.out.println(tickets.get(1).getId() + "날짜 : " + tickets.get(1).getDate() + ", 시간 : " + tickets.get(1).getTime() + ", 캐스트 : " + tickets.get(1).getCast());
-        System.out.println(tickets.get(2).getId() + "날짜 : " + tickets.get(2).getDate() + ", 시간 : " + tickets.get(2).getTime() + ", 캐스트 : " + tickets.get(2).getCast());
+        System.out.println(tickets.get(0).getId() + ", 날짜 : " + tickets.get(0).getDate() + ", 시간 : " + tickets.get(0).getTime() + ", 캐스트 : " + tickets.get(0).getCast());
+        System.out.println(tickets.get(1).getId() + ", 날짜 : " + tickets.get(1).getDate() + ", 시간 : " + tickets.get(1).getTime() + ", 캐스트 : " + tickets.get(1).getCast());
+        System.out.println(tickets.get(2).getId() + ", 날짜 : " + tickets.get(2).getDate() + ", 시간 : " + tickets.get(2).getTime() + ", 캐스트 : " + tickets.get(2).getCast());
     }
     public static void musicalReservation(){
         System.out.println("=============== 예매하기 ===============");
         System.out.println("원하는 회차를 입력해주세요(예: 1회차)");
         System.out.print(">> ");
         String select = sc.nextLine();
-        Ticket res = null;
-        for(Ticket list : reservation){
-            if (list.getId().equals(select)) {
-                res = list;
+        sc.nextLine();
+        boolean res = false;
+        for(Ticket ticket : tickets){
+            if (ticket.getId().equals(select)) {
+                res = true;
                 break;
+            }else{
+                System.out.println("회차를 확인해주세요.");
             }
         }
-        ArrayList<User> users = new ArrayList<>();
-        if(res != null){
+        if(res){
             System.out.print("예매자 이름을 입력하세요 : ");
             String name = sc.nextLine();
             System.out.print("전화번호를 입력하세요 : ");
             String phone = sc.nextLine();
             System.out.print("비밀번호를 설정해주세요 : ");
-            int pass = sc.nextInt();
+            String pass = sc.nextLine();
             sc.nextLine();
             users.add(new User(name, phone, pass));
             reservation.addAll(reservation);
@@ -110,7 +125,12 @@ public class Main {
                 if(user.getPass().equals(userPass)){
                     run = true;
                     System.out.println("예매자 이름 : " + user.getName() + "님의 예매 회차 : " + reservation);
+                }else{
+                    System.out.println("비밀번호를 확인해주세요.");
                 }
+            }else{
+                System.out.println("이름을 확인해주세요.");
+                return;
             }
         }
         if (!run) {
@@ -121,14 +141,12 @@ public class Main {
     }
 
     public static void musicalCancle() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'musicalCancle'");
-    }
-
-
-    private static void musicalAdmin() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'musicalAdmin'");
+        System.out.println("=============== 취소하기 ===============");
+        System.out.println("취소하는 회차를 입력해주세요(예: 1회차)");
+        System.out.print(">> ");
+        String select = sc.nextLine();
+        sc.nextLine();
+        boolean res = false;
     }
 
 }
