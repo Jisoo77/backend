@@ -147,6 +147,15 @@ public class Main {
         String select = sc.nextLine();
         sc.nextLine();
         boolean res = false;
+        for(Ticket ticket : tickets){
+            if (ticket.getId().equals(select)) {
+                tickets.remove(ticket);
+                break;
+            }
+        }
+        if(!res){
+            System.out.println("찾는 회차가 없습니다.");
+        }
     }
 
 }

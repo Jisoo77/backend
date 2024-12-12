@@ -67,9 +67,17 @@ public class TicketManager {
                     System.out.print("날짜 수정 : ");
                     String upDate = sc.next();
                     ticket.setDate(upDate);
-                    System.out.println(num + "의 날짜가 수정되었습니다.");
+                    System.out.println(upNum + "의 날짜가 수정되었습니다.");
                 }else if(ticket.getId().equals(2)){
-
+                    System.out.print("공연 시간 수정 : ");
+                    String upDate = sc.next();
+                    ticket.setTime(upDate);
+                    System.out.println(upNum + "의 날짜가 수정되었습니다.");
+                }else if(ticket.getId().equals(3)){
+                    System.out.print("캐스트 멤버 수정 : ");
+                    String upDate = sc.next();
+                    ticket.setCast(upDate);
+                    System.out.println(upNum + "의 캐스트가 수정되었습니다.");
                 }
             }
         }
