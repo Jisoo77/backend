@@ -11,6 +11,14 @@ public class Main {
     protected static final Scanner sc =new Scanner(System.in);
     public static void main(String[] args) {
         // TicketManager tm = new TicketManager();
+        System.out.println();
+        System.out.println(
+            "#       # ##### #       #  #        #           #       #       # ##### ####      #      ##\n" + 
+            " #     #    #    #     #  # #       #          # #       #     #    #   #   #    # #     ##\n" + 
+            "  #   #     #     #   #  #####      #         #####       #   #     #   #    #  #####    ##\n" +
+            "   # #      #      # #  #     #     #        #     #       # #      #   #   #  #     #\n" +
+            "    #     #####     #  #       #    ####### #       #       #     ##### ####  #       #  ##\n"
+        );
         System.out.println("뮤지컬 <프리다> 예매 진행을 시작합니다.");
         System.out.println();
         TicketManager tm = new TicketManager();

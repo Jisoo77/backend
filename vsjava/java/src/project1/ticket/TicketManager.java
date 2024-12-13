@@ -79,6 +79,9 @@ public class TicketManager {
                     ticket.setCast(upDate);
                     System.out.println(upNum + "의 캐스트가 수정되었습니다.");
                 }
+            }else{
+                System.out.println("잘못 입력하셨습니다.");
+                continue;
             }
         }
     }
