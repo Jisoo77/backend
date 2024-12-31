@@ -17,6 +17,8 @@ import {useState} from "react";
 import FourApp from "./components/FourApp";
 import FiveApp from "./components/FiveApp";
 import SixApp from "./components/SixApp";
+import FourthApp1 from './components/FourthApp1';
+import FourthApp2 from './components/FourthApp2';
 
 function App() {
   const [index, setIndex] = useState(2);
@@ -33,11 +35,13 @@ function App() {
         <option value='4'>FourApp 확인하기</option>
         <option value='5'>FiveApp 확인하기</option>
         <option value='6'>SixApp 확인하기</option>
+        <option value='7'>FourthApp1 확인하기</option>
+        <option value='8'>FourthApp2 확인하기</option>
     </select>
 
     {index===1?<OneApp/>:index===2?<TwoApp/>
         :index===3?<ThreeApp/>:index===4?<FourApp/>
-            :index===5?<FiveApp/>:<SixApp/>}
+            :index===5?<FiveApp/>:index===6?<SixApp/>:index==7?<FourthApp1/>:<FourthApp2/>}
     </div>
   );
 }
