@@ -1,0 +1,15 @@
+*{margin: 0;padding: 0;}
+
+div{width: 200px; margin: 100px auto; border-radius: 10px;}
+input{
+    border: 0; border-collapse: collapse; width: 100%; height: 40px;
+    background-color:rgba(138, 182, 202,0.6);
+}
+input:hover{cursor: pointer; background-color:rgba(138, 182, 202,0.8)}
+table{border-collapse: collapse; width: 100%;}
+td{border: 1px solid #333; width: 25%;}
+
+.result{background-color: #fff;}
+.result:hover{background-color: #fff;}
+.number, .dot{background-color: rgba(240, 248, 255, 1);}
+.number:hover, .dot:hover{background-color: rgb(240, 248, 255, 0.2);}
